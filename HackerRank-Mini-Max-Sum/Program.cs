@@ -18,12 +18,16 @@ namespace HackerRank_Mini_Max_Sum
             //Skip function is referenced from the System.linq and it skips the specified element referenced within the parameters'
             //then the elements are added with the sum function.
             long max = arr.Skip(1).Sum();
+
+            Console.WriteLine(min.ToString(), max);
         }
         static void Main(string[] args)
         {
             int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
         ;
             MiniMaxSum(arr);
+
+            Console.Read();
         }
     }
 }

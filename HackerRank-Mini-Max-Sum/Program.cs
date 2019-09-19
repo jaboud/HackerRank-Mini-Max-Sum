@@ -6,7 +6,8 @@ namespace HackerRank_Mini_Max_Sum
     {
         static void MiniMaxSum(int[] arr)
         {
-
+            //Reference the Array class to sort arrays from least greatest
+            Array.Sort(arr);
         }
         static void Main(string[] args)
         {

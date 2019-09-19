@@ -19,7 +19,7 @@ namespace HackerRank_Mini_Max_Sum
             //then the elements are added with the sum function.
             long max = arr.Skip(1).Sum();
 
-            Console.WriteLine(min.ToString(), max);
+            Console.WriteLine($"{min} {max}");
         }
         static void Main(string[] args)
         {

@@ -14,10 +14,10 @@ namespace HackerRank_Mini_Max_Sum
 
             //Take function is referenced from the System.linq and it outputs the number of elements in the array which is specified in the parameters
             //then the elements are added with the sum function.
-            long min = arr.Take(4).Sum();
+            long min = arr.Take(4).Sum(element => (long)element);
             //Skip function is referenced from the System.linq and it skips the specified element referenced within the parameters'
             //then the elements are added with the sum function.
-            long max = arr.Skip(1).Sum();
+            long max = arr.Skip(1).Sum(element => (long)element);
 
             Console.WriteLine($"{min} {max}");
         }

@@ -6,7 +6,9 @@ namespace HackerRank_Mini_Max_Sum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
+        ;
+            miniMaxSum(arr);
         }
     }
 }
